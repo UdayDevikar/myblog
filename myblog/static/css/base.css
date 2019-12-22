@@ -1,0 +1,127 @@
+  * { margin : 0px;
+	padding: 0px ;
+
+ }
+
+ .nav {  height: 70px ; }
+
+
+
+
+
+
+.footer-top{    
+				background-color: #111;
+				padding: 80px 0;
+
+	 }
+
+
+
+.heading{ font-size: 20px ;
+			letter-spacing: 3px;
+			color: #fff;
+			margin: 10px 0;
+			text-transform: uppercase;
+			padding-left: 20px ;
+
+ }
+
+ .content { 
+ 			color: #fff;
+ 			text-align:justify ;
+ 			padding-left: 20px ;
+ 	 
+
+
+  }
+
+
+.segment-two  ul li  {    
+
+	border-bottom: 1px solid rgba(255,255,255, 0.3);
+	line-height: 40px ;
+	list-style-type: none
+
+
+
+}
+
+
+.segment-two  ul li a { 
+
+			color: #999;
+			text-decoration: none;
+			padding-left: 20px ;
+ }
+
+
+
+
+
+
+
+}	
+
+
+
+.segment-three ul {
+
+				display: flex;
+				position:absolute;
+
+
+
+}	
+
+
+
+
+.segment-three  a { 
+
+			width: 30px;
+			height: 30px;
+			background: #494848;
+			display: inline-block;
+			border-radius: 50%;
+			margin-left: 18px ;
+
+
+
+ }
+
+
+
+.segment-three a i {
+
+	font-size: 15px ;
+	color: #fff;
+	padding: 10px 12px ;
+
+}
+
+
+.footer-bottom-text{ 
+
+text-align: center ;
+background-color: #000;
+line-height: 75px;
+color: #fff;
+
+
+ }
+.base { 
+
+			width: 100%;
+			height: auto
+
+
+ }
+
+
+
+ .image { 
+
+
+ 	background-image: url('/media/lappy3.jpg')
+  }

@@ -1,0 +1,30 @@
+
+.site-content  {
+	 	
+	 	background-image: url(/media/lappy3.jpg);
+	 	background-attachment : fixed;
+	 	background-size: cover;
+	 	height: 100vh;
+}
+
+.shape { 
+
+			width: 225px;
+			height: 225px ;
+			border-radius: 50%;
+			margin-top: 130px;
+}
+
+
+.my-info {  padding-top:50px ;
+		
+			background-color: #282828;
+			padding-bottom: 100px 
+
+ }
+
+.heading { padding-right: 20px ;
+			padding-bottom: 20px ;
+
+
+ }

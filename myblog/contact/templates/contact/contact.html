@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block title %} contact {% endblock %}
+
+ {% block css %}
+ {{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+ {% endblock css %}
+
+
+
+
+
+{% block content %}
+
+
+<br> <br> 
+<br> 
+
+<div class='contact'>
+	<div class="container">
+		<div class='row'>
+			<div class='offset-3 col-xl-6'>
+		        <h4>CONTACT ME </h4><br><br>
+		        <div style="width:80%">
+		            <form action="" method='post'>
+		            {% csrf_token %}
+		            {% for field in form %}
+		            <div class="form-group has-errors text-danger small">
+		                {{field.errors}}
+		            </div>
+		            <div class="form-group has-errors text-danger small">
+		            </div>
+		            <div class="form-group">
+		                {{field}}
+		            </div>
+		            {% endfor %}
+		            <button type='submit' class="btn btn-outline-secondary" style="width:100%">Login</button>
+		        </div>
+		        </form>
+		    </div>
+		</div>
+    </div>
+</div>
+<br><br><br>
+{% endblock %}
+
+<!-- 
+	<div class='container'>
+			<form method='POST'>
+			{% csrf_token %}
+
+
+			{{ form.as_p }}
+
+
+			<input type='submit' name='submit'/>
+
+
+			</form>
+	 	</div>
+	 
+
+
+	 <div class='container'>
+		<div class='row'>
+			<div class='col-offset-3 col-md-6'>
+				<h4 class='title is-size3'> Contact Me</h4>
+				<form action='{% url "contact" %}' method='post'>
+					{% csrf_token %}
+					{% for non-field-error in form.non_field_errors %}
+					<p class='help is-danger'>{{ non_field_error }}</p>
+					{% endfor %}
+					{% for field in form %}
+					<div class='field'>
+						{{ field }}
+						{% if field.help_text %}
+						<p class='help'> {{ field.help_text }}</p>
+						{% endif %}
+						{% for error in field.errors %}
+						<p class='help-is-danger'>{{ error }}</p>
+						{% endfor %}
+					</div>
+					{% endfor %}
+					<button type='submit' class='btn btn-outline-secondary'> Connect </button>
+				</form>
+			</div>
+		</div>
+	</div> #}
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

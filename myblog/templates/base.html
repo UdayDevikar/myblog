@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	
+     <title>{% block title %}  {% endblock %}</title>
+
+     {% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+	{% endblock css %}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+</head>
+
+
+
+<body>
+
+	<nav class='navbar  navbar-expand-md navbar-dark bg-dark'>
+		<a href='#' class='navbar-brand text-warning font-weight-bold'>UDAY DEVIKAR</a>
+		<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarid'>
+			<span class='navbar-toggler-icon'>  </span>
+		</button>
+
+		<div class='collapse navbar-collapse' id='navbarid'>
+			<ul class='navbar-nav ml-auto'>
+				<li class='nav-item'>
+					<a href='{% url "home" %}' class='nav-link text-white'>HOME</a>
+				</li>
+				<li class='nav-item'>
+					<a href='{% url "contact" %}'class='nav-link text-white'>CONTACT </a>
+				</li>
+				<li class='nav-item'>
+					<a href='{% url "about" %}' class='nav-link text-white'>ABOUT </a>
+				</li>
+				<li class='nav-item'>
+					<a href='{% url "blog" %}' class='nav-link text-white'>BLOG</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+
+
+ {% block content %}
+
+
+ {% endblock %}
+
+
+
+{% block content1 %}
+
+
+{% endblock content1 %}
+
+
+	<div class='footer'>
+		<div class='footer-top'>
+			<div class='container'>
+				<div class='row  d-flex justify-content-center'>
+					<div class='col-lg-4 col-sm-6 col-xs-12 col-md-4 sm-mb-40 segment-one'>
+						<h2 class='heading'> About me </h2>
+						<p class='content'>Hie there! <br> I am uday Devikar:) <br>i am python developer<br> 
+							this is my first website <br>
+							Just take a loot at my work..!  </p>
+					</div>
+					<div class='col-lg-4 col-sm-6 col-xs-12 col-md-4 sm-mb-40  segment-two'>
+						<h2 class='heading'> Useful Links </h2>
+						<ul claas='content'>
+							<li> <a href='{% url "home" %}'> HOME</a></li>
+							<li> <a href='{% url "contact" %}'> CONTACT</a></li>
+							<li> <a href='{% url "about" %}'> ABOUT</a></li>
+							<li> <a href='{% url "blog" %}'> BLOG</a></li>
+						</ul>
+					</div>
+						<div class='col-lg-4 col-sm-6 col-xs-12 col-md-4 sm-mb-40  segment-three'>
+							<h2 class='heading'> Follow  Me </h2>
+							<p class='content'> Uday Devikar <br> Ganpati Matha, Warje <br> pune (415001) <br>
+							<strong> Phone no:</strong> +91 8087436966<br>
+							<strong> Email: </strong> uday.devikar@gmail.com<br></p>
+						    	<a href="#"> <i class="fa fa-facebook"></i></a>	
+								<a href="#"> <i class="fa fa-twitter"></i></a>
+								<a href="#"> <i class="fa fa-instagram"></i></a>
+								<a href="#"> <i class="fa fa-linkedin"></i></a>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class='footer-bottom-text'> All Rights reserved by &copy; Uday Devikar </p>
+	</div>
+
+
+
+</body>
+</html>

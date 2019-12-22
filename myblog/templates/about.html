@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block title %} about {% endblock %}
+
+ {% block css %}
+ {{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+ {% endblock css %}
+
+
+
+
+
+
+
+
+{% block content %}
+<div class='my-info'>
+	<div class='container about'>
+		<div class='row'>
+			<div class='col-md-5'>
+				<div class='about-img'>
+					<img class='shape'
+					src='/media/lappy20.jpg'>
+				</div>		
+			</div>
+			
+			<div class='col-md-6 '>
+				<h1 class='heading'> About Me</h1>
+				<p class=' text-white'>
+				Hi! this is Uday Devikar, I am python developer i love to make a 
+				professional web applications, this is my first website 
+				i know this is not so professional, but to be a professional in something  we must 
+				start from being unprofessional.</p>
+				<p class='text-white'>
+				 Initially i dont had any intrest in web programming but somehow i develop my
+				 intrest in it , so after my engineering i join a training institute to learn a programming specifically python programming language, 
+				</p>
+				<p class='text-white'> I am recent engineering graduate from 
+				Government College Of Engineering, Jalgaon i have complete my engineering in the year (2015-2019)
+				after that i learn these programming language .
+				 and now i am searching for a  job to get a better opportunity to grow my knowledge and yes to be professional in python programming 
+					<br><br><br>
+					Phone no:+91 8087436966 <br>
+					Email: uday.devikar@gmail.com
+				</p>
+				<a href='{% url "contact" %}' > 
+				<button class='btn btn-outline-secondary'> Hire me</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+		<br><br>	<br><br>v	<br><br>
+
+{% endblock %}
+
+{% block content1 %}
+
+<h3 class='text-center'> My Skills </h3>	<br><br>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-10'>
+				<h6 class='text-justify'>Python</h6>
+				<div class="progress">
+					
+		    		<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="	100" style="width:50%">
+		      			<span class="sr-only">70% Complete</span>
+    				</div>
+    			</div>
+    		</div>
+    			<br>
+    			<br><br>
+    		<div class='col-10'>
+    			<h6> Django</h6>
+				<div class="progress">
+				
+		    		<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="	100" style="width:40%">
+		      			<span class="sr-only">70% Complete</span>
+    				</div>
+    			</div>
+    		</div>
+    			<br><br>
+    			<br>
+    		<div class='col-10'>
+    			<h6> HTML</h6>
+				<div class="progress">
+					
+		    		<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="	100" style="width:60%">
+		      			<span class="sr-only">70% Complete</span>
+    				</div>
+    			</div>
+    		</div>
+    			<br><br>
+    			<br>
+    		<div class='col-10'>
+    			<h6> CSS</h6>
+				<div class="progress">
+
+		    		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="	100" style="width:50%">
+		      			<span class="sr-only">70% Complete</span>
+    				</div>
+    			</div>
+    		</div>
+    			<br><br>
+    			<br>
+    		<div class='col-10'>
+    			<h6> Javascript</h6>
+				<div class="progress">
+		    		<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="	100" style="width:30%">
+		      			<span class="sr-only">70% Complete</span>
+    				</div>
+    			</div>
+    		</div>
+    		<br>
+    			<br><br>
+    		<div class='col-10'>
+    			<h6> Bootstrap 4</h6>
+				<div class="progress">
+		    		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="	100" style="width:40%">
+		      			<span class="sr-only">70% Complete</span>
+    				</div>
+    			</div>
+    		</div>
+    			<br><br>
+    			<br>
+    		<div class='col-10'>
+    			<h6>MYSQL</h6>
+				<div class="progress">
+		    		<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="	100" style="width:50%">
+		      			<span class="sr-only">70% Complete</span>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	<br><br>	<br><br>	<br><br>
+
+
+		
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

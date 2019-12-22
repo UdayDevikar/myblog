@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mysite</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+</head>
+<body>
+	<nav class='navbar  navbar-expand-md navbar-dark bg-dark'>
+		<a href='#' class='navbar-brand text-warning font-weight-bold'>UDAY DEVIKAR</a>
+		<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarid'>
+			<span class='navbar-toggler-icon'>  </span>
+		</button>
+
+		<div class='collapse navbar-collapse' id='navbarid'>
+			<ul class='navbar-nav ml-auto'>
+				<li class='nav-item'>
+					<a href='{% url "home" %}' class='nav-link text-white'>HOME</a>
+				</li>
+				<li class='nav-item'>
+					<a href='{% url "contact" %}'class='nav-link text-white'>CONTACT </a>
+				</li>
+				<li class='nav-item'>
+					<a href='{% url "about" %}' class='nav-link text-white'>ABOUT </a>
+				</li>
+				<li class='nav-item'>
+					<a href='{% url "blog" %}' class='nav-link text-white'>BLOG</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<main class='container-fluid p-0'>
+		<div class='site-content'>
+			<div class='d-flex justify-content-center'>
+				<div class='d-flex flex-column'>
+					<h1 class='myname'> Hie ! I am Uday Devikar<br>
+					I am Self learned Python Developer</h1>
+					<p class='hire'> Hire me </p>
+					<p class='learn'> Learn more about me </p>
+				</div>
+			</div>		
+		</div>
+	</main>
+
+	<div class='container my-data'>
+		<div class='row'>
+			<div class='col-lg-8 col-xl-8 col-md-6 col-sm-6 col-xs-6'>
+				<div class='main'>
+					Who is Uday Devikar?
+				</div>
+				<div class='about'>
+					<p>I completed my Engineering from Government College Of Engineering, Jalgaon (2015-2019).
+					after that i wanted to learn programming, so i relocate to pune, and I join training and placement institute ETL Hive. Pune</p>
+					<p>Programming is very frustrating, if any newbiew writing a program witought reading any documentation, then! yes,   it is frustrating  because I have been there when i started to learn programming, and as i grow with these
+					i become comfortable with it. now i am very well understood about all key things about programming  so it becomes easy for me </p>
+					<p> 
+					i started learnning python , initialy it was realy very frustrating but with time things becomes easy, and i started loving this languages </p>
+					<p>the skills i have developed through this training  institute you can see further  
+					</p>
+				</div>
+
+				<div class='main'>
+					Communication
+				</div>
+				<div class='about'>
+					<p>
+					I seriously thinks this skill would help a lot to a individual<br>
+					Rather than talking i prefer listening and i think this makes my communication more effective<br> 
+					I listen carefully what a person want me to convey, i understand  what a person want me to say <br>
+					i always respect the people, i respect the the way people  thinks<br>
+					and this helps me to make a bond with a person i'm talking<br>
+					</p>
+					<p>
+					i can talk clearly, i can explain things in very precise manner, <br>
+					I read books on daily basis this keeps  me motivated towards my work <br> 
+					</p>
+				</div>
+
+				<div class='main'>
+					Problem Solving
+				</div>
+				<div class='about'>
+					<p>I completed my Engineering from Government College Of Engineering, Jalgaon (2015-2019)
+					after that i wanted to learn programming, so i relocate to pune, and I join training and placement institute ETL Hive. Pune</p>
+					<p>Programming is very frustrating, if any newbiew writing a program witought reading any documentation, then! yes,   it is frustrating  because I have been there when i started to learn programming, and as i grow with these
+					i become comfortable with it. now i am very well understood about all key things about programming  so it becomes easy for me </p>
+					<p> 
+					i started learnning python , initialy it was realy very frustrating but with time things becomes easy, and i started loving this languages </p>
+					<p>the skills i have developed through this training  institute you can see further  
+					</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+<br><br><br><br><br><br>
+
+
+	
+
+
+
+
+
+	<div class='footer'>
+		<div class='footer-top'>
+			<div class='container'>
+				<div class='row  d-flex justify-content-center'>
+					<div class='col-lg-4 col-sm-6 col-xs-12 col-md-4 sm-mb-40 segment-one'>
+						<h2 class='heading'> About me </h2>
+						<p class='content'>Hie there! <br> I am uday Devikar:) <br>i am python developer<br> 
+							this is my first website <br>
+							Just take a loot at my work..!  </p>
+					</div>
+					<div class='col-lg-4 col-sm-6 col-xs-12 col-md-4 sm-mb-40  segment-two'>
+						<h2 class='heading'> Useful Links </h2>
+						<ul claas='content'>
+							<li> <a href='{% url "home" %}'> HOME</a></li>
+							<li> <a href='{% url "contact" %}'> CONTACT</a></li>
+							<li> <a href='{% url "about" %}'> ABOUT</a></li>
+							<li> <a href='{% url "blog" %}'> BLOG</a></li>
+						</ul>
+					</div>
+						<div class='col-lg-4 col-sm-6 col-xs-12 col-md-4 sm-mb-40  segment-three'>
+							<h2 class='heading'> Follow  Me </h2>
+							<p class='content'> Uday Devikar <br> Ganpati Matha, Warje <br> pune (415001) <br>
+							<strong> Phone no:</strong> +91 8087436966<br>
+							<strong> Email: </strong> uday.devikar@gmail.com<br></p>
+						    	<a href="https://www.facebook.com/uday.devikar.3?viewas=100000686899395&privacy_source=timeline_gear_menu&entry_point=action_bar#_"> <i class="fa fa-facebook"></i></a>	
+								<a href="#"> <i class="fa fa-twitter"></i></a>
+								<a href="https://www.instagram.com/uday_devikar/?hl=en"> <i class="fa fa-instagram"></i></a>
+								<a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"> <i class="fa fa-linkedin"></i></a>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class='footer-bottom-text'> All Rights reserved by &copy; Uday Devikar </p>
+	</div>
+
+
+</body>
+</html>
